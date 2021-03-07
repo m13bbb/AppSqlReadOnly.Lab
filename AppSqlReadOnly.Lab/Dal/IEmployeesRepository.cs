@@ -8,6 +8,8 @@ namespace AppSqlReadOnly.Lab.Dal
     public interface IEmployeesRepository
     {
         Task<IEnumerable<EmployeeDao>> GetAllAsync();
+
+        //zad
         Task<IEnumerable<EmployeeDao>> GetByCityAsync(string city);
         Task<EmployeeDao> GetAsync(int id);
     }
